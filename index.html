@@ -425,60 +425,52 @@
         </div>
     </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
 
-
-
-
-
-
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="btn-close" data-modal-close>
+    <button type="button" class="modal__button-close" data-modal-close>
       <svg width="18" height="18">
         <use href="./images/icons.svg#icon-close-x">
         </use>
       </svg>
     </button>
-    <form class="modal-styles">
-    <p class="modal-main-text">Zostaw swoje dane w formularzu poniżej</p> 
-     <label class="order-label-styles" for="orderusername">Imie
-      <span class="order-input-position">
-        <input class="order-input-styles" type="text" name="orderusername" required>
-      <svg class="order-svg-style" width="18" height="18">
-        <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-      </svg>
-      </span>
-    </label>
-     <label class="order-label-styles" for="orderphonenumber">Telefon
-      <span class="order-input-position"><input class="order-input-styles" type="text" name="orderphonenumber" type="number" required>
-      <svg class="order-svg-style" width="18" height="18"><use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-      </svg>
-    </span>
-    </label>
-    <label class="order-label-styles" for="orderphonenumber">Email
-      <span class="order-input-position"><input class="order-input-styles" type="text" name="orderemail" type="email" required>
-      <svg class="order-svg-style" width="18" height="18"><use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-      </svg>
-</span> 
-</label>
-     <label class="order-label-styles" for="ordercomment">Komentarz
-      <textarea placeholder="Wprowadź tekst" class="order-textarea order-placeholder-style" name="ordercomment"></textarea>
-  </label>   
-
-
-
-       <label class="order-rodo" for="orderrodo">
-      <input type="checkbox" id="orderrodo" name="rodo-accept" value="rodo-accept" class="rodo-accept" required>
-      <span class="rodo-checkbox-icon">
-        <svg class="rodo-svg-style" width="16" height="15">
-        <use href="./images/icons.svg#icon-Vector-1"></use>
-      </svg>
-      </span>
-      <p class="rodo-text-style">Oświadczam iż akceptuję <a href="/" class="rodo-link">Regulamin</a> i <a href="/" class="rodo-link">Politykę Prywatności</a>.</p>
-    </label>
-    <button class="order-rodo-btn" type="submit">Wyślij</button>
-  </form>
-</div>
+    <form class="modal-form">
+      <p class="modal-form__text">Zostaw swoje dane w formularzu poniżej</p> 
+      <label class="modal-form__label" for="orderusername">Imie
+        <span class="modal-form__label-styles">
+          <input class="modal-form__input-styles" type="text" name="orderusername" required>
+          <svg class="modal-form--svg" width="18" height="18">
+          <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal-form__label" for="orderphonenumber">Telefon
+        <span class="modal-form__label-styles"><input class="modal-form__input-styles" type="text" name="orderphonenumber" type="number" required>
+          <svg class="modal-form--svg" width="18" height="18"><use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal-form__label" for="orderemail">Email
+        <span class="modal-form__label-styles"><input class="modal-form__input-styles" type="text" name="orderemail" type="email" required>
+          <svg class="modal-form--svg" width="18" height="18"><use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+          </svg>
+        </span> 
+      </label>
+      <label class="modal-form__label" for="ordercomment">Komentarz
+        <textarea placeholder="Wprowadź tekst" class="modal-form__textarea modal-form__textarea--placeholder" name="ordercomment"></textarea>
+      </label>   
+      <label class="modal-form__rodo" for="orderrodo">
+        <input type="checkbox" id="orderrodo" name="rodo-accept" value="rodo-accept" class="rodo-accept" required>
+        <span class="modal-form__rodo-styles">
+          <svg class="modal-form__rodo-styles--icon" width="16" height="15">
+          <use href="./images/icons.svg#icon-Vector-1"></use>
+          </svg>
+        </span>
+        <p class="modal-form__rodo--text">Oświadczam iż akceptuję <a href="/" class="modal-form__rodo--link">Regulamin</a> i <a href="/" class="modal-form__rodo--link">Politykę Prywatności</a>.</p>
+      </label>
+    <button class="modal-form__button-send" type="submit">Wyślij</button>
+    </form>
+  </div>
 </div>
     <script src="./js/modal.js"></script>
   </body>

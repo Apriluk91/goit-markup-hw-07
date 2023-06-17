@@ -13,8 +13,8 @@
     align-items: center;
     justify-content: center;
 
-    &:focus,
-    :hover {
+    &:hover,
+    :focus {
       border-color: var(--blue-sky);
       cursor: pointer;
       fill: var(--blue-sky);

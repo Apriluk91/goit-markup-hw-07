@@ -16,10 +16,6 @@
 
   &__link {
     display: block;
-
-    &:hover + .portfolio-list_pic-text {
-      transform: translateX(0);
-    }
   }
 
   &__pic-overlay {
@@ -40,7 +36,12 @@
     transform: translateY(100%);
     transition: transform 250ms var(--cubic-bezier);
 
-    & > p {
+    .portfolio-list__link:hover &,
+    .portfolio-list__link:focus & {
+      transform: translateY(0);
+    }
+
+    & p {
       font-size: 18px;
       line-height: 1.55;
       letter-spacing: 0.03em;
